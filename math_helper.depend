@@ -1,0 +1,5 @@
+# depslib dependency file v1.0
+1625680708 source:c:\users\hp\desktop\leja\programiranje\c\math_helper\main.c
+	<stdio.h>
+	<stdlib.h>
+
