@@ -30,16 +30,16 @@ int main()
 
     switch(operation) {
         case '1':
-            printf("Addition");
+            printf("ADDITION");
             break;
         case '2':
-            printf("Subtraction");
+            printf("SUBSCTRACTION");
             break;
         case '3':
-            printf("Multiplication");
+            printf("MULTIPLICATION");
             break;
         case '4':
-            printf("Division");
+            printf("DIVISION");
             break;
         default:
             printf("Wrong choice");
