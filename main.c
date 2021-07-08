@@ -30,7 +30,15 @@ int main()
 
     switch(operation) {
         case '1':
-            printf("ADDITION");
+            printf("ADDITION \n");
+            printf("\n");
+            double number1, number2;
+            printf("First number: \n");
+            scanf("%lf", &number1);
+            printf("Second number: \n");
+            scanf("%lf", &number2);
+            printf("\n");
+            printf("%.lf + %.lf = %.lf", number1, number2, number1 + number2);
             break;
         case '2':
             printf("SUBSCTRACTION");
