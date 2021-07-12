@@ -30,6 +30,7 @@ int main()
 
     switch(operation) {
         case '1':
+            system("cls");
             printf("ADDITION \n");
             printf("\n");
             double number1, number2;
@@ -41,6 +42,7 @@ int main()
             printf("%.lf + %.lf = %.lf", number1, number2, number1 + number2);
             break;
         case '2':
+            system("cls");
             printf("SUBTRACTION");
             printf("\n");
             double number11, number22;
@@ -52,6 +54,7 @@ int main()
             printf("%.lf - %.lf = %.lf", number11, number22, number11 - number22);
             break;
         case '3':
+            system("cls");
             printf("MULTIPLICATION");
             printf("\n");
             double number111, number222;
@@ -63,6 +66,7 @@ int main()
             printf("%.lf * %.lf = %.lf", number111, number222, number111 * number222);
             break;
         case '4':
+            system("cls");
             printf("DIVISION");
             printf("\n");
             double number1111, number2222;
@@ -74,6 +78,7 @@ int main()
             printf("%.lf / %.lf = %.lf", number1111, number2222, number1111 / number2222);
             break;
         default:
+            system("cls");
             printf("\n");
             printf("Wrong choice");
     }
