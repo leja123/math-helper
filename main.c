@@ -25,6 +25,8 @@ int main()
     printf("2. Subtraction\n");
     printf("3. Multiplication\n");
     printf("4. Division\n");
+    printf("5. Square perimeter\n");
+    printf("6. Square area\n");
     printf("\n");
     scanf("%c", &operation);
 
@@ -76,6 +78,26 @@ int main()
             scanf("%lf", &number2222);
             printf("\n");
             printf("%.lf / %.lf = %.lf", number1111, number2222, number1111 / number2222);
+            break;
+        case '5':
+            system("cls");
+            printf("SQUARE PERIMETER");
+            printf("\n");
+            double number11111;
+            printf("Lenght of the side: \n");
+            scanf("%lf", &number11111);
+            printf("\n");
+            printf("4 * %.lf = %.lf", number11111, 4 * number11111);
+            break;
+        case '6':
+            system("cls");
+            printf("SQUARE AREA");
+            printf("\n");
+            double number111111;
+            printf("Lenght of the side: \n");
+            scanf("%lf", &number111111);
+            printf("\n");
+            printf("%.lf * %.lf = %.lf", number111111, number111111, number111111 * number111111);
             break;
         default:
             system("cls");
