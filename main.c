@@ -21,10 +21,13 @@ int main()
     int choice;
     printf("Choose an operation:\n");
     printf("\n");
+    printf("BASIC OPERATIONS:\n");
     printf("1. Addition\n");
     printf("2. Subtraction\n");
     printf("3. Multiplication\n");
     printf("4. Division\n");
+    printf("\n");
+    printf("GEOMETRY FORMULAS:\n");
     printf("5. Square perimeter\n");
     printf("6. Square area\n");
     printf("7. Rectangle perimeter\n");
@@ -86,7 +89,7 @@ int main()
             printf("SQUARE PERIMETER");
             printf("\n");
             double number11111;
-            printf("Lenght of the side: \n");
+            printf("Length of the side: \n");
             scanf("%lf", &number11111);
             printf("\n");
             printf("4 * %.lf = %.lf", number11111, 4 * number11111);
@@ -96,7 +99,7 @@ int main()
             printf("SQUARE AREA");
             printf("\n");
             double number111111;
-            printf("Lenght of the side: \n");
+            printf("Length of the side: \n");
             scanf("%lf", &number111111);
             printf("\n");
             printf("%.lf * %.lf = %.lf", number111111, number111111, number111111 * number111111);
@@ -106,10 +109,10 @@ int main()
             printf("RECTANGLE PERIMETER");
             printf("\n");
             double rectangle_a;
-            printf("Lenght of the side a: \n");
+            printf("Length of the side a: \n");
             scanf("%lf", &rectangle_a);
             double rectangle_b;
-            printf("Lenght of the side b: \n");
+            printf("Length of the side b: \n");
             scanf("%lf", &rectangle_b);
             printf("\n");
             printf("2 * %.lf + 2 * %.lf = %.lf", rectangle_a, rectangle_b,2 * rectangle_a + 2 * rectangle_b);
@@ -119,10 +122,10 @@ int main()
             printf("RECTANGLE AREA");
             printf("\n");
             double rectangle_aa;
-            printf("Lenght of the side a: \n");
+            printf("Length of the side a: \n");
             scanf("%lf", &rectangle_aa);
             double rectangle_bb;
-            printf("Lenght of the side b: \n");
+            printf("Length of the side b: \n");
             scanf("%lf", &rectangle_bb);
             printf("\n");
             printf("%.lf * %.lf = %.lf", rectangle_aa, rectangle_bb, rectangle_aa * rectangle_bb);
