@@ -32,6 +32,8 @@ int main()
     printf("6. Square area\n");
     printf("7. Rectangle perimeter\n");
     printf("8. Rectangle area\n");
+    printf("9. Circle perimeter\n");
+    printf("a. Circle area\n");
     printf("\n");
     scanf("%c", &operation);
 
@@ -129,6 +131,26 @@ int main()
             scanf("%lf", &rectangle_bb);
             printf("\n");
             printf("%.lf * %.lf = %.lf", rectangle_aa, rectangle_bb, rectangle_aa * rectangle_bb);
+            break;
+        case '9':
+            system("cls");
+            printf("CIRCLE PERIMETER");
+            printf("\n");
+            double radius;
+            printf("What is the circle radius: \n");
+            scanf("%lf", &radius);
+            printf("\n");
+            printf("2 * 3.14 * %.lf = %.lf", radius, 2 * 3.14 * radius);
+            break;
+        case 'a':
+            system("cls");
+            printf("CIRCLE AREA");
+            printf("\n");
+            double radius1;
+            printf("What is the circle radius: \n");
+            scanf("%lf", &radius1);
+            printf("\n");
+            printf("3.14 * %.lf * %.lf = %.lf", radius1, radius1, 3.14 * radius1 * radius1);
             break;
         default:
             system("cls");
