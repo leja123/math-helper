@@ -17,6 +17,8 @@ int main()
     printf("\n");
     printf("\n");
 
+    menu:
+    printf("\n");
     char operation;
     int choice;
     printf("Choose an operation:\n");
@@ -49,6 +51,7 @@ int main()
             scanf("%lf", &number2);
             printf("\n");
             printf("%.lf + %.lf = %.lf", number1, number2, number1 + number2);
+            goto question;
             break;
         case '2':
             system("cls");
@@ -156,7 +159,27 @@ int main()
             system("cls");
             printf("\n");
             printf("Wrong choice");
+            goto menu;
     }
+
+    question:
+    printf("\n");
+    char answer;
+    printf("Wanna go back to the operations menu? (y/n) \n");
+    scanf("%c", &answer);
+
+    switch(answer){
+    case 'y':
+        goto menu;
+    case 'n':
+        system("cls");
+    default:
+        system("cls");
+    }
+
+
+
+
 
 
     return 0;
