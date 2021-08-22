@@ -67,6 +67,7 @@ int main()
             printf("\n");
             printf("%.lf - %.lf = %.lf", number11, number22, number11 - number22);
             sleep(3);
+            goto question;
             break;
         case '3':
             system("cls");
@@ -80,6 +81,7 @@ int main()
             printf("\n");
             printf("%.lf * %.lf = %.lf", number111, number222, number111 * number222);
             sleep(3);
+            goto question;
             break;
         case '4':
             system("cls");
@@ -93,6 +95,7 @@ int main()
             printf("\n");
             printf("%.lf / %.lf = %.lf", number1111, number2222, number1111 / number2222);
             sleep(3);
+            goto question;
             break;
         case '5':
             system("cls");
@@ -104,6 +107,7 @@ int main()
             printf("\n");
             printf("4 * %.lf = %.lf", number11111, 4 * number11111);
             sleep(3);
+            goto question;
             break;
         case '6':
             system("cls");
@@ -115,6 +119,7 @@ int main()
             printf("\n");
             printf("%.lf * %.lf = %.lf", number111111, number111111, number111111 * number111111);
             sleep(3);
+            goto question;
             break;
         case '7':
             system("cls");
@@ -129,6 +134,7 @@ int main()
             printf("\n");
             printf("2 * %.lf + 2 * %.lf = %.lf", rectangle_a, rectangle_b,2 * rectangle_a + 2 * rectangle_b);
             sleep(3);
+            goto question;
             break;
         case '8':
             system("cls");
@@ -143,6 +149,7 @@ int main()
             printf("\n");
             printf("%.lf * %.lf = %.lf", rectangle_aa, rectangle_bb, rectangle_aa * rectangle_bb);
             sleep(3);
+            goto question;
             break;
         case '9':
             system("cls");
@@ -154,6 +161,7 @@ int main()
             printf("\n");
             printf("2 * 3.14 * %.lf = %.lf", radius, 2 * 3.14 * radius);
             sleep(3);
+            goto question;
             break;
         case 'a':
             system("cls");
@@ -165,6 +173,7 @@ int main()
             printf("\n");
             printf("3.14 * %.lf * %.lf = %.lf", radius1, radius1, 3.14 * radius1 * radius1);
             sleep(3);
+            goto question;
             break;
         default:
             system("cls");
@@ -172,28 +181,17 @@ int main()
             printf("Wrong choice");
             sleep(2);
             goto menu;
+            break;
     }
 
     question:
     printf("\n");
-    char answer;
-    int answer1;
-    printf("Wanna go back to the operations menu? (y/n) \n");
-    scanf("%c", &answer);
-
-    switch(answer){
-        case 'y':
-            goto menu;
-        case 'n':
-            system("cls");
-        default:
-            system("cls");
+    int answer;
+    printf("Wanna go back to the operations menu?  \n");
+    scanf("%s", &answer);
+    if(answer = 'yes'){
+        goto menu;
     }
-
-
-
-
-
 
     return 0;
 }
