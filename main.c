@@ -24,8 +24,8 @@ int main()
     int choice;
     printf("Choose an operation:\n");
     printf("\n");
-    printf("BASIC OPERATIONS:\n");
-    printf("1. Addition\n");
+    printf("BASIC OPERATIONS:                    b. Triangle perimeter\n");
+    printf("1. Addition                          c.\n");
     printf("2. Subtraction\n");
     printf("3. Multiplication\n");
     printf("4. Division\n");
@@ -175,6 +175,21 @@ int main()
             sleep(3);
             goto question;
             break;
+        case 'b':
+            system("cls");
+            double triangle_a;
+            printf("Enter the length of the side a: ");
+            scanf("%lf", &triangle_a);
+            double triangle_b;
+            printf("Enter the length of the side b: ");
+            scanf("%lf", &triangle_b);
+            double triangle_c;
+            printf("Enter the length of the side c: ");
+            scanf("%lf", &triangle_c);
+            printf("\n");
+            printf("%.lf + %.lf + %.lf = %.lf", triangle_a, triangle_b, triangle_c, triangle_a + triangle_b + triangle_c);
+            sleep(3);
+            goto question;
         default:
             system("cls");
             printf("\n");
