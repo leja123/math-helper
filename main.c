@@ -27,7 +27,7 @@ int main()
     printf("BASIC OPERATIONS:                  b. Triangle perimeter                OTHER FORMULAS:\n");
     printf("1. Addition                        c. Triangle area\n");
     printf("2. Subtraction                     d. Rhombus perimeter\n");
-    printf("3. Multiplication                  e. \n");
+    printf("3. Multiplication                  e. Rhombus area\n");
     printf("4. Division\n");
     printf("\n");
     printf("GEOMETRY FORMULAS:\n");
@@ -216,6 +216,20 @@ int main()
             printf("What is the length of side a?");
             scanf("%lf", &rhombus_a);
             printf("%.lf * 4 = %.lf", rhombus_a, rhombus_a * 4);
+            sleep(3);
+            goto question;
+            break;
+        case 'e':
+            system("cls");
+            printf("RHOMBUS AREA");
+            printf("\n");
+            double rhombus_e;
+            printf("What is the length of the diagonal e?");
+            scanf("%lf", &rhombus_e);
+            double rhombus_f;
+            printf("What is the length of the diagonal f?");
+            scanf("%lf", &rhombus_f);
+            printf("%.lf * %.lf / 2 = %.lf", rhombus_e, rhombus_f, rhombus_e * rhombus_f / 2);
             sleep(3);
             goto question;
             break;
