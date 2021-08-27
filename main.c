@@ -250,6 +250,20 @@ int main()
             sleep(3);
             goto question;
             break;
+        case 'g':
+            system("cls");
+            printf("CYLINDER VOLUME");
+            printf("\n");
+            double cylinder_r;
+            printf("WHat is the cylinder's radius?");
+            scanf("%lf", &cylinder_r);
+            double cylinder_h;
+            printf("What is the cylinder's height?");
+            scanf("%lf", &cylinder_h);
+            printf("3.14 * %.lf * %.lf * %.lf = %.lf", cylinder_r, cylinder_r, cylinder_h, 3.14 * cylinder_r * cylinder_r * cylinder_h);
+            sleep(3);
+            goto question;
+            break;
         default:
             system("cls");
             printf("\n");
