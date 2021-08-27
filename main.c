@@ -28,8 +28,8 @@ int main()
     printf("1. Addition                        c. Triangle area\n");
     printf("2. Subtraction                     d. Rhombus perimeter\n");
     printf("3. Multiplication                  e. Rhombus area\n");
-    printf("4. Division\n");
-    printf("\n");
+    printf("4. Division                        f. Cube volume\n");
+    printf("                                   g. Cylinder volume\n");
     printf("GEOMETRY FORMULAS:\n");
     printf("5. Square perimeter\n");
     printf("6. Square area\n");
@@ -230,6 +230,23 @@ int main()
             printf("What is the length of the diagonal f?");
             scanf("%lf", &rhombus_f);
             printf("%.lf * %.lf / 2 = %.lf", rhombus_e, rhombus_f, rhombus_e * rhombus_f / 2);
+            sleep(3);
+            goto question;
+            break;
+        case 'f':
+            system("cls");
+            printf("CUBE VOLUME");
+            printf("\n");
+            double cube_a;
+            printf("What is the cube length?");
+            scanf("%lf", &cube_a);
+            double cube_b;
+            printf("What is the cube width?");
+            scanf("%lf", &cube_b);
+            double cube_c;
+            printf("What is the cube heigth?");
+            scanf("%lf", &cube_c);
+            printf("%.lf * %.lf * %.lf = %.lf", cube_a, cube_b, cube_c, cube_a * cube_b * cube_c);
             sleep(3);
             goto question;
             break;
